@@ -145,31 +145,27 @@ celery -A backend beat -l info
 python manage.py runserver
 
 ⚡ How the AI Agent Works (Flow)
-mathematica
-Copy code
+
 Gmail Sync → Intent Classification → Reply Generation
          → Format HTML → Save Gmail Draft → Save in DB
+
 📌 API Endpoints
 Email List
-bash
-Copy code
 GET /emails/list/
+
 Email Detail
-bash
-Copy code
 GET /emails/detail/<id>/
+
 Run Reply Agent
-bash
-Copy code
 POST /emails/agent/reply/<id>/
+
 Run Full Inbox Agent
-swift
-Copy code
 POST /emails/agent/full/
+
 Sync Emails
-bash
-Copy code
 GET /emails/sync/
+
+
 🚨 Important Notes
 Do NOT commit:
 .env
