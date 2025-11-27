@@ -1,0 +1,76 @@
+# ============================
+# PYTHON
+# ============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+
+# Virtual environment
+.env
+.env.*
+venv/
+env/
+.venv/
+
+# Local Python config
+*.egg-info/
+dist/
+build/
+
+# ============================
+# DJANGO
+# ============================
+# SQLite database
+db.sqlite3
+
+# Django secret keys or local settings
+*.local
+settings_local.py
+
+# Media / static generated files (if any)
+media/
+staticfiles/
+
+# ============================
+# CELERY
+# ============================
+celerybeat-schedule
+celerybeat-schedule.*
+celerybeat.pid
+
+# ============================
+# REDIS / CACHE / LOGS
+# ============================
+*.log
+*.out
+*.pid
+
+# ============================
+# ENVIRONMENT VARIABLES
+# ============================
+.env
+*.env
+
+# ============================
+# OS / EDITOR FILES
+# ============================
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# PyCharm
+.idea/
+
+# Windows
+*.bat
+*.exe
+
+# ============================
+# OLLAMA MODELS (local models)
+# ============================
+ollama/
