@@ -99,58 +99,51 @@ GET /emails/sync/
 
 ---
 
-## 🔧 Installation & Setup
+## 🛠 Installation & Setup
 
 ### 1️⃣ Clone the repository
-
 ```bash
 git clone https://github.com/narsi-2208/ai-email-agent-backend.git
 cd ai-email-agent-backend/backend
 
 
-
-2️⃣ Create environment
-bash
-Copy code
+### 2️⃣ Create environment
+```bash
 conda create -n aiagent python=3.10
 conda activate aiagent
-3️⃣ Install dependencies
-bash
-Copy code
-pip install -r requirements.txt
-4️⃣ Create .env file
-ini
-Copy code
-DJANGO_SECRET_KEY=your-secret
-DEBUG=True
 
+### 3️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+
+### 4️⃣ Create .env file
+
+```bash
 GOOGLE_CLIENT_ID=xxxx
 GOOGLE_CLIENT_SECRET=xxxx
-GOOGLE_REDIRECT_URI=http://127.0.0.1:8000/accounts/google/callback/
-
 OPENAI_API_KEY=sk-xxxxx
 
-REDIS_URL=redis://localhost:6379/0
-5️⃣ Run migrations
-bash
-Copy code
+
+### 5️⃣ Run migrations
+```bash
 python manage.py migrate
-6️⃣ Start Redis
-bash
-Copy code
+
+### 6️⃣ Start Redis
+```bash
 redis-server
-7️⃣ Start Celery Worker
-bash
-Copy code
+
+### 7️⃣ Start Celery Worker
+```bash
 celery -A backend worker -l info -P solo
-8️⃣ Start Celery Beat
-bash
-Copy code
+
+### 8️⃣ Start Celery Beat
+```bash
 celery -A backend beat -l info
-9️⃣ Start Django backend
-bash
-Copy code
+
+### 9️⃣ Start Django backend
+```bash
 python manage.py runserver
+
 ⚡ How the AI Agent Works (Flow)
 mathematica
 Copy code
