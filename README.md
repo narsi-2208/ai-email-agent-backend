@@ -31,8 +31,9 @@ backend/
 │── .env # NOT committed
 │── requirements.txt
 
-markdown
-Copy code
+
+---
+
 
 ---
 
@@ -69,16 +70,17 @@ The LangGraph pipeline handles:
 
 ### ⭐ 5. REST API (Frontend Ready)
 
+
+
 GET /emails/list/
 GET /emails/detail/<id>/
 POST /emails/agent/reply/<id>/
 POST /emails/agent/full/
 GET /emails/sync/
 
-yaml
-Copy code
 
 ---
+
 
 ## 🛠 Tech Stack
 
@@ -104,6 +106,9 @@ Copy code
 ```bash
 git clone https://github.com/narsi-2208/ai-email-agent-backend.git
 cd ai-email-agent-backend/backend
+
+
+
 2️⃣ Create environment
 bash
 Copy code
